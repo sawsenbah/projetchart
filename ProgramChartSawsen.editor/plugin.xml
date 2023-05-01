@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated programChartSawsen -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="programChartSawsen.presentation.ProgramChartSawsenModelWizardID"
+            name="%_UI_ProgramChartSawsenModelWizard_label"
+            class="programChartSawsen.presentation.ProgramChartSawsenModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ProgramChartSawsenModelFile.gif">
+         <description>%_UI_ProgramChartSawsenModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated programChartSawsen -->
+      <editor
+            id="programChartSawsen.presentation.ProgramChartSawsenEditorID"
+            name="%_UI_ProgramChartSawsenEditor_label"
+            icon="icons/full/obj16/ProgramChartSawsenModelFile.gif"
+            extensions="programchartsawsen"
+            class="programChartSawsen.presentation.ProgramChartSawsenEditor"
+            contributorClass="programChartSawsen.presentation.ProgramChartSawsenActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
